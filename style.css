@@ -14,13 +14,6 @@ body {
   padding: 0;
 }
 
-.head-web {
-  font-size: 20px;
-  padding: 60px;
-  background-color: var(--kuningmuda);
-  text-align: center;
-}
-
 nav {
   background-color: var(--kuning);
   padding: 5px;
@@ -41,6 +34,7 @@ nav li {
 }
 
 nav a {
+  padding: 1px 10px;
   font-size: 18px;
   text-decoration: none;
   font-weight: 400;
@@ -48,13 +42,15 @@ nav a {
 }
 
 nav a:hover {
-  font-weight: bold;
+  background-color: var(--kuningmuda);
+  border:1px solid var(--hitam);
+  border-radius: 50px;
 }
 
 main {
-  padding: 20px;
+  padding: 30px;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 #content {
@@ -64,19 +60,15 @@ main {
   gap: 1rem 2rem;
 }
 
-aside {
-  flex: 1;
-}
-
 header {
   display: inline;
 }
 
-.profile header {
+.aside-profile header {
   text-align: center;
 }
 
-.profile img {
+.aside-profile img {
   width: 200px;
 }
 
@@ -86,15 +78,24 @@ header {
   padding: 20px;
 }
 
+.card h2{
+  text-align: center;
+}
+
+.card p{
+  text-align: justify;
+}
+
 footer {
-  padding: 20px;
+  padding: 10px;
   color: var(--hitam);
   background-color: var(--kuning);
   text-align: center;
   font-weight: bold;
 }
 
-.featured-image {
+.gambar {
+  border-radius: 10px;
   width: 100%;
   max-width: 999px;
   object-fit: cover;
@@ -110,15 +111,16 @@ section table {
   text-align: center;
 }
 
-@media screen and (max-width:1000px){
-    #content,aside{
-        width: 100%;
-        padding: 0;
-    }
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
 }
 
-@media screen and (max-width:1200px){
-    main{
-        flex-flow: column nowrap;
-    }
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
 }
