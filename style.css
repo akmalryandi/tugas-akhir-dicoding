@@ -1,0 +1,124 @@
+:root {
+  --kuningmuda: #e8f571;
+  --kuning: #ddf123;
+  --hitam: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gabarito", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.head-web {
+  font-size: 20px;
+  padding: 60px;
+  background-color: var(--kuningmuda);
+  text-align: center;
+}
+
+nav {
+  background-color: var(--kuning);
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding-inline: 4rem;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--hitam);
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 5;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 2px 8px 29px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  color: var(--hitam);
+  background-color: var(--kuning);
+  text-align: center;
+  font-weight: bold;
+}
+
+.featured-image {
+  width: 100%;
+  max-width: 999px;
+  object-fit: cover;
+  object-position: center;
+}
+
+section h3 {
+  text-align: center;
+}
+
+section table {
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width:1000px){
+    #content,aside{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:1200px){
+    main{
+        flex-flow: column nowrap;
+    }
+}
